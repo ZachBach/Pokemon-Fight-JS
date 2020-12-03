@@ -90,8 +90,8 @@ populateVariables = () => {
           'http://vignette4.wikia.nocookie.net/pokemon/images/5/5b/Pikachu_Back_XY.gif/revision/latest?cb=20141009080948',
       },
       hp: {
-        current: 500,
-        total: 500,
+        current: 1000,
+        total: 1000,
       },
       attacks: [
         {
@@ -124,6 +124,58 @@ populateVariables = () => {
           avail: {
             total: 20,
             remaining: 20,
+          },
+        },
+      ],
+    },
+    {
+      name: 'squirtle',
+      type: 'water',
+      weakness: ['grass', 'electric'],
+      resistance: ['fire', 'normal'],
+      img: {
+        default:
+          'http://vignette3.wikia.nocookie.net/ssbb/images/7/79/Squirtle_Rojo_Fuego_y_Verde_Hoja.png/revision/latest?cb=20130907041944&path-prefix=es',
+        front:
+          'https://66.media.tumblr.com/ddd22fe10a485ed56a46d958c058a970/tumblr_n9lnpepqkW1scncwdo1_500.gif',
+        back:
+          'http://vignette3.wikia.nocookie.net/pokemon/images/d/d8/Squirtle_XY_Back_Sprite.gif/revision/latest?cb=20141031154426',
+      },
+      hp: {
+        current: 1200,
+        total: 1200,
+      },
+      attacks: [
+        {
+          name: 'bubblebeam',
+          hp: randNumber(30, 15),
+          avail: {
+            total: 30,
+            remaining: 30,
+          },
+        },
+        {
+          name: 'water gun',
+          hp: randNumber(50, 25),
+          avail: {
+            total: 25,
+            remaining: 25,
+          },
+        },
+        {
+          name: 'tackle',
+          hp: randNumber(20, 10),
+          avail: {
+            total: 30,
+            remaining: 30,
+          },
+        },
+        {
+          name: 'hydro pump',
+          hp: randNumber(100, 60),
+          avail: {
+            total: 5,
+            remaining: 5,
           },
         },
       ],
