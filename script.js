@@ -288,3 +288,13 @@ populateVariables = () => {
     },
   ];
 };
+
+// Random number function for damage of attacks
+function randomNum(max, min) {
+  if (min === undefined || min === '' || min === null) {
+    min = 0;
+  }
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+// append pokemon to DOM
