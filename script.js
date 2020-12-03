@@ -14,8 +14,7 @@ progressInt = null;
 progressComplete = 0;
 
 populateVariables = () => {
-  // all the music for the game
-  // http://downloads.khinsider.com/game-soundtracks/album/pokemon-gameboy-sound-collection
+  // http://downloads.khinsider.com/game-soundtracks/album/pokemon-gameboy-sound-collection for all the game music visit this link!!
   gameMusic = {
     opening:
       'http://66.90.91.26/ost/pokemon-gameboy-sound-collection/aipycrsoym/101-opening.mp3',
@@ -176,6 +175,113 @@ populateVariables = () => {
           avail: {
             total: 5,
             remaining: 5,
+          },
+        },
+      ],
+    },
+    {
+      name: 'charmander',
+      type: 'fire',
+      weakness: ['water'],
+      resistance: ['grass'],
+      img: {
+        default:
+          'http://img3.wikia.nocookie.net/__cb20150330015216/pokemon/images/f/f5/004Charmander_Pokemon_Mystery_Dungeon_Explorers_of_Sky.png',
+        front:
+          'http://rs772.pbsrc.com/albums/yy9/HybridRainbow88/Charmander.gif~c200',
+        back:
+          'http://vignette1.wikia.nocookie.net/pokemon/images/2/23/Charmander_Back_XY.gif/revision/latest?cb=20141009063457',
+      },
+      hp: {
+        current: 1100,
+        total: 1100,
+      },
+      attacks: [
+        {
+          name: 'ember',
+          hp: randNumber(30, 15),
+          avail: {
+            total: 30,
+            remaining: 30,
+          },
+        },
+        {
+          name: 'flamethrower',
+          hp: randNumber(50, 25),
+          avail: {
+            total: 25,
+            remaining: 25,
+          },
+        },
+        {
+          name: 'scratch',
+          hp: randNumber(20, 10),
+          avail: {
+            total: 30,
+            remaining: 30,
+          },
+        },
+        {
+          name: 'fire spin',
+          hp: randNumber(100, 60),
+          avail: {
+            total: 5,
+            remaining: 5,
+          },
+        },
+      ],
+    },
+    {
+      name: 'bulbasaur',
+      type: 'grass',
+      weakness: ['fire'],
+      resistance: ['water', 'psychic'],
+      img: {
+        default:
+          'http://vignette4.wikia.nocookie.net/pokemon/images/8/81/001Bulbasaur_Pokemon_Mystery_Dungeon_Explorers_of_Sky.png/revision/latest?cb=20150105223818',
+        front: 'https://media.giphy.com/media/iIWW4BM6nNWTu/giphy.gif',
+        back:
+          'http://rs425.pbsrc.com/albums/pp335/Grasaldrea/ShinyBulbasauranimatedback.gif~c200',
+        deranged:
+          'http://rs522.pbsrc.com/albums/w348/Richtoon18/b3617568f13aa750c57eacc45d0b2da7.gif~c200',
+        sleep:
+          'https://31.media.tumblr.com/4dd7682db26ac687ef81f0dd06794652/tumblr_msesq5uAIk1r93jsro1_500.gif',
+      },
+      hp: {
+        current: 1300,
+        total: 1300,
+      },
+      attacks: [
+        {
+          name: 'tackle',
+          hp: randomNum(40, 20),
+          avail: {
+            total: 30,
+            remaining: 30,
+          },
+        },
+        {
+          name: 'vine whip',
+          hp: randomNum(60, 45),
+          avail: {
+            total: 10,
+            remaining: 10,
+          },
+        },
+        {
+          name: 'razor leaf',
+          hp: randomNum(75, 60),
+          avail: {
+            total: 5,
+            remaining: 5,
+          },
+        },
+        {
+          name: 'solar beam',
+          hp: randomNum(160, 130),
+          avail: {
+            total: 2,
+            remaining: 2,
           },
         },
       ],
